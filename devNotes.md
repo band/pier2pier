@@ -3,4 +3,18 @@
 PK suggested this link <https://medium.com/swlh/flask-docker-the-basics-66a699aa1e7d>
 and, Yay!, it works!
 
+## 2022-02-19 notes
+
+1. David Duncan led me to this web page:
+  <https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d>
+  
+  This in turn yielded this resource:
+  <https://hub.docker.com/_/python/>
+  
+  And this in turn led me to thinking that our Docker image will *not*
+  be using Alpine, but rather one of the latest Python version "slim"
+  images based on Debian releases ("buster" is the current stable
+  release).
+  
+
 
