@@ -16,5 +16,12 @@ and, Yay!, it works!
   images based on Debian releases ("buster" is the current stable
   release).
   
+## 2022-02-20 notes
 
+1. adding jinja2 code; the following Flask routes work:
+```
+  localhost:5001/
+  localhost:5001/ttest
+  localhost:5001/page-news
+```
 

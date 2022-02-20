@@ -1,5 +1,6 @@
 # pier2pier: Massive Wiki tools in a docker container
 
+### development journal and notes are [here](/devNotes.md).
 
 2022-02-17: Notes in this README build on instructions and descriptions in this
 Medium post: <https://medium.com/swlh/flask-docker-the-basics-66a699aa1e7d>
