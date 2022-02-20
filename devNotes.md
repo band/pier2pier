@@ -1,6 +1,6 @@
 # 2022-02-17 Flask in Docker dev notes
 
-Conceptual architecture of what this project is working towards is in this [diagram](pier2pier v0 conceptual diagram 2022-02-16-001.png)
+Conceptual architecture of what this project is working towards is in this [diagram](/pier2pier v0 conceptual diagram 2022-02-16-001.png)
 
 PK suggested this link <https://medium.com/swlh/flask-docker-the-basics-66a699aa1e7d> as a place to start
 and, Yay!, it works!
