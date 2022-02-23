@@ -1,0 +1,29 @@
+{% extends "public/templates/public_template.html" %}
+
+{% block title %}Your command{% endblock %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      
+      <h1>Your wish is my command</h1>
+      <hr>
+
+      <form action="/command" method="POST">
+
+	<div class="form-group">
+	  <label>Command</label>
+	  <input type="command" class="form-control" id="command" name="command" placeholder="Enter your wish, er, command.">
+	</div>
+
+	<button type="submit" class="btn btn-primary">Do it!</button>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+
+{% endblock %}
