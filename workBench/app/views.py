@@ -16,17 +16,19 @@ def about():
 
 @app.route("/command", methods=["GET", "POST"])
 def your_command():
+    p = {
+        'stdout': '(nothing)',
+        'stderr': 'method is not POST'
+    }
     if request.method == "POST":
         cmd = request.form["command"]
         p = subprocess.run(
             cmd.split(),
             capture_output=True,
-            encoding='UTF-8'
+            encoding='UTF-8',
+            shell=True
             )
         if p.returncode != 0:
             flash("I'm sorry Dave, I'm afraid I can't do that.")
-            return redirect(request.url)
-        else:
-            return render_template("public/command_output.html", result=p)
 
-    return render_template("public/your_command.html")
+    return render_template("public/your_command.html", p=p)
