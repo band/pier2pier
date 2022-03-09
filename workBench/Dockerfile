@@ -15,6 +15,5 @@ ENV FLASK_ENV=development
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY app app
-COPY templates templates
 COPY run.py run.py
 CMD ["flask", "run"]
