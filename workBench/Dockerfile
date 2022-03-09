@@ -1,4 +1,12 @@
 FROM python:3.10.2-slim-buster
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update
+RUN apt-get -y upgrade
+RUN apt-get -y install --no-install-recommends git
+RUN apt-get clean
+RUN rm -fr /var/lib/apt/lists*
+
 WORKDIR /usr/src/app
 ENV FLASK_APP=run.py
 ENV FLASK_RUN_HOST=0.0.0.0
