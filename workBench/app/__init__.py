@@ -1,7 +1,7 @@
 
-from flask import Flask
+import flask
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
 app.config["SECRET_KEY"] = "016hOdMleWZ4uJjt2CG0NmA"
 
