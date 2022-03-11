@@ -19,9 +19,10 @@ def your_command():
         'stderr': 'method is not POST'
     }
     if flask.request.method == "POST":
-        cmd = flask.request.form["command"]
+        cmd=[]
+        cmd.append(flask.request.form["command"])
         p = subprocess.run(
-            cmd.split(),
+            cmd,
             capture_output=True,
             encoding='UTF-8',
             shell=True
