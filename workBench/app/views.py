@@ -15,6 +15,7 @@ def about():
 @app.route("/command", methods=["GET", "POST"])
 def your_command():
     p = {
+        'args': ['awaiting your command ...'],
         'stdout': '(nothing)',
         'stderr': 'method is not POST'
     }

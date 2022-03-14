@@ -14,4 +14,5 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY app app
 COPY run.py run.py
+COPY templates templates
 CMD ["flask", "run"]
